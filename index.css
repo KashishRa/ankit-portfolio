@@ -1,0 +1,138 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background-color: #0d6efd;
+    color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    color: #ffc107;
+    transform: scale(1.05);
+}
+
+/* Section Cards */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0d6efd;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 15px 0 5px;
+}
+
+section p, section li {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Contact Section Styling */
+#contact p {
+    margin: 6px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #0d6efd;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+    font-size: 0.95rem;
+}
+
+/* Links inside sections */
+section a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: #ffc107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 20px;
+        margin: 30px 10px;
+    }
+}

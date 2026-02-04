@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankit Sharma | Mathematics Professor</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
-    <!-- Navigation -->
+    <!-- HEADER -->
     <header>
+        <button id="modeToggle">🌙 Dark Mode</button>
+
         <h1>Ankit Sharma</h1>
+        <img src="images/profile.jpg" alt="Ankit Sharma" class="profile-pic">
         <p>Assistant Professor | Mathematics</p>
+
         <nav>
-            <a href="#about">About</a> |
-            <a href="#experience">Experience</a> |
-            <a href="#publications">Publications</a> |
-            <a href="#education">Education</a> |
-            <a href="#training">Trainings</a> |
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#publications">Publications</a>
+            <a href="#education">Education</a>
+            <a href="#training">Trainings</a>
             <a href="#contact">Contact</a>
         </nav>
-        <hr>
     </header>
 
-    <!-- About Section -->
+    <!-- ABOUT -->
     <section id="about">
         <h2>About Me</h2>
         <p>
@@ -38,9 +42,7 @@
         </ul>
     </section>
 
-    <hr>
-
-    <!-- Experience -->
+    <!-- EXPERIENCE -->
     <section id="experience">
         <h2>Professional Experience</h2>
 
@@ -64,42 +66,30 @@
         </ul>
     </section>
 
-    <hr>
-
-    <!-- Publications -->
+    <!-- PUBLICATIONS -->
     <section id="publications">
         <h2>Publications</h2>
         <ul>
-            <li>
-                “The Mathematical Expression Denoting the Selling Price of a Decaying Inventory…” 
-                – Research Trends in Computer Science & Mathematical Science, 2023.
-            </li>
-            <li>
-                “The Study of Group Theory and its Application in Complex Mathematical Problems”
-                – GCSSD Conference, 2023.
-            </li>
+            <li>“The Mathematical Expression Denoting the Selling Price of a Decaying Inventory…” – Research Trends, 2023.</li>
+            <li>“The Study of Group Theory and its Application in Complex Mathematical Problems” – GCSSD, 2023.</li>
             <li>“The Vedic Mathematics Approach” – Book Chapter, 2022.</li>
             <li>“STEM Education” – Book Chapter, 2022.</li>
         </ul>
     </section>
 
-    <hr>
-
-    <!-- Education -->
+    <!-- EDUCATION -->
     <section id="education">
         <h2>Education</h2>
         <ul>
             <li><strong>PhD Mathematics</strong> – CCS University (Pursuing)</li>
             <li><strong>MSc Mathematics</strong> – C.L. Jain Degree College (59.77%)</li>
             <li><strong>BSc Computer Science</strong> – Narayan Degree College (64.88%)</li>
-            <li><strong>Intermediate (PCM)</strong> – Brij Raj Singh Inter College (55.8%)</li>
-            <li><strong>High School</strong> – Brij Raj Singh Inter College (57.67%)</li>
+            <li><strong>Intermediate (PCM)</strong></li>
+            <li><strong>High School</strong></li>
         </ul>
     </section>
 
-    <hr>
-
-    <!-- Trainings -->
+    <!-- TRAINING -->
     <section id="training">
         <h2>FDPs & Trainings</h2>
         <ul>
@@ -108,22 +98,47 @@
         </ul>
     </section>
 
-    <hr>
-
-    <!-- Contact -->
+    <!-- CONTACT -->
     <section id="contact">
         <h2>Contact</h2>
-        <p><strong>Phone:</strong> 8449718725</p>
-        <p><strong><helf>Email:</strong> sharmaankit199697@gmail.com</p>
+
+        <p><strong>Phone:</strong>
+            <a href="tel:8449718725">8449718725</a>
+        </p>
+
+        <p><strong>Email:</strong>
+            <a href="mailto:sharmaankit199697@gmail.com">sharmaankit199697@gmail.com</a>
+        </p>
+
+        <p><strong>LinkedIn:</strong></p>
+        <a href="https://www.linkedin.com/in/leutinent-ankit-sharma-a35825292/"
+           target="_blank"
+           class="linkedin-btn">
+           Connect on LinkedIn
+        </a>
+
         <p><strong>Location:</strong> Ghaziabad, Uttar Pradesh, India</p>
         <p><em>Willing to relocate</em></p>
     </section>
 
-    <hr>
-
     <footer>
         <p>© 2026 Ankit Sharma | Mathematics Portfolio</p>
     </footer>
+
+    <!-- DARK MODE SCRIPT -->
+    <script>
+        const toggleBtn = document.getElementById("modeToggle");
+
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                toggleBtn.textContent = "☀ Light Mode";
+            } else {
+                toggleBtn.textContent = "🌙 Dark Mode";
+            }
+        });
+    </script>
 
 </body>
 </html>
